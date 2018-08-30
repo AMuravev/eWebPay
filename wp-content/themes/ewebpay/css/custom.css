@@ -1,0 +1,5 @@
+.elementor-widget-container {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
