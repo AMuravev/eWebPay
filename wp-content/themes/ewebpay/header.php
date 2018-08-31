@@ -30,33 +30,3 @@
   <?php wp_head(); ?>
 
 </head>
-
-<body <?php body_class('bg'); ?>>
-
-<div class="container">
-  <div class="row mt-5">
-    <div class="col d-flex logo-top-container"><div class="logo-top"><a href="/">eWebPay</a></div></div>
-    <div class="col text-right">
-      <nav class="navbar navbar-light bg-faded rounded navbar-expand-sm">
-        <div class="navbar-collapse">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="credit-card-processing.php">Credit Card Processing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="in-store-payments.php">In-Store Payments</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="online-payments.php">Online Payments</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="omnichannel.php">Omnichannel</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="support.php">Support</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </div>

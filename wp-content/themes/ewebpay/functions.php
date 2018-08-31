@@ -7,6 +7,9 @@
  * @package eWebPay
  */
 
+require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . '/inc/options.php';
+
 /**
  * Register widget area.
  *
@@ -24,6 +27,16 @@ function ewebpay_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'ewebpay_widgets_init' );
+
+
+/* Enable menu*/
+
+add_action('after_setup_theme', function(){
+    register_nav_menus( array(
+        'menuHeader' => 'menuHeader',
+        'menuFooter' => 'menuFooter',
+    ) );
+});
 
 /**
  * Enqueue scripts and styles.

@@ -15,6 +15,25 @@
 get_header();
 ?>
 
+<body <?php body_class('bg'); ?>>
+
+<div class="container">
+  <div class="row mt-5">
+    <div class="col d-flex logo-top-container"><div class="logo-top"><a href="/">eWebPay</a></div></div>
+    <div class="col text-right">
+      <nav class="navbar navbar-light bg-faded rounded navbar-expand-sm">
+        <div class="navbar-collapse">
+            <?php wp_nav_menu( ([
+                'theme-location' => 'menuHeader',
+                'menu' => 'Header Menu',
+                'container' => false,
+                'menu_class' => 'navbar-nav mr-auto',
+            ]))?>
+        </div>
+      </nav>
+    </div>
+  </div>
+
 
 
 		<?php
@@ -34,6 +53,8 @@ get_header();
 		?>
 
 </div>
+
+<footer class="footer">
 
 <?php
 get_footer();

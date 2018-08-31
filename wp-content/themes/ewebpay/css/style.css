@@ -1,0 +1,689 @@
+html {
+    background: url(../img/bg.png) no-repeat top center #f5f2f2;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+html.main {
+    background: url(../img/bg-main.png) no-repeat top center #f5f2f2;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+html.plain-bottom {
+    background: url(../img/bg.png) no-repeat center -350px #f5f2f2;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+body {
+    background: none;
+}
+
+body.bg {
+    background: url(../img/bg-bottom.png) no-repeat bottom center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    min-height:100%;
+}
+
+.sub-footer {
+    background: url(../img/bg-bottom.png) no-repeat bottom center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.btn-primary {
+    background-color: #67bbd4;
+    border-color: #67bbd4;
+    text-transform: uppercase;
+    height: 35px;
+    padding: .375rem 1.75rem;
+    border-radius: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #2b3473;
+    border-color: #2b3473;
+}
+
+.btn-outline-light {
+    height: 35px;
+    padding: .375rem 1.75rem;
+    border-radius: 10px;
+    border-width: 2px;
+    line-height: 0.8;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 980px;
+        padding: 0;
+    }
+}
+
+.logo-top-container {
+    padding-top: 8px;
+}
+
+.logo-top {
+    background: url(../img/logo-white.svg) no-repeat top center;
+    background-size: 36px 15px;
+    font-family: 'avalonbold';
+    font-size: 18px;
+    text-transform: lowercase;
+    color: #fff;
+    padding-top: 12px;
+}
+
+.logo-top a, .logo-top a:visited, .logo-top a:hover {
+    color: #fff;
+    text-decoration: none;
+    border: none;
+}
+
+nav {
+    font: 15px 'Open Sans';
+    color: #fff;
+    white-space: nowrap;
+}
+
+.navbar-light .navbar-nav a {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .active>a {
+    color: #fff;
+    font-weight: 600;
+}
+
+.nav-item {
+    flex-shrink: 0;
+}
+
+.logo-intro {
+    max-width: 503px;
+    min-height: 41px;
+    background-color: #2b3473;
+    border-radius: 20px;
+    padding: 3px 0 0 4px;
+    margin-top: 190px;
+}
+
+.logo-intro .col {
+    width: 88px;
+    max-width: 88px;
+    height: 35px;
+    background: no-repeat url(../img/logo-white.svg) 19px center #67bbd4;
+    background-size: 47px 18px;
+    border-radius: 20px;
+}
+
+.logo-intro .col-auto {
+    color: #fff;
+    font-size: 15px;
+    line-height: 2.2;
+    padding-left: 23px;
+}
+
+.text-intro {
+    margin-top: 68px;
+}
+
+.text-intro h1 {
+    font-size: 40px;
+    font-family: 'avalonbold';
+    color: #fff;
+}
+
+.text-intro h2 {
+    font-size: 25px;
+    color: #c2c2c2;
+    line-height: 1.5;
+    margin-top: 35px;
+}
+
+.text-intro p {
+    color: #fff;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.cards-first {
+    margin-top: 182px;
+}
+
+.cards .card {
+    max-width: 466px;
+    min-height: 295px;
+    border-radius: 30px;
+    background-color: #fff;
+    border: none;
+}
+
+.cards h3 {
+    font-size: 18px;
+    font-family: 'avalonbold';
+    color: #3e4152;
+    margin-bottom: 1rem;
+}
+
+.cards p {
+    font-size: 14px;
+    color: #a1a1a1;
+    margin-bottom: 1.3rem;
+}
+
+.cards .card-left {
+    padding-left: 0;
+    padding-right: 24px;
+}
+
+.cards .card-right {
+    padding-left: 24px;
+    padding-right: 0;
+}
+
+.cards .card-body {
+    padding: 50px 30px 43px 200px;
+}
+
+.cards-wide .card {
+    max-width: none;
+    min-height: 232px;
+}
+
+.cards-wide .card-body {
+    padding-top: 38px;
+}
+
+.cards .card-1 {
+    background: url(../img/1.png) no-repeat 30px center;
+}
+
+.cards .card-2 {
+    background: url(../img/2.png) no-repeat 30px center;
+}
+
+.cards .card-3 {
+    background: url(../img/3.png) no-repeat 30px center;
+}
+
+.cards .card-4 {
+    background: url(../img/4.png) no-repeat 30px center;
+}
+
+.cards .card-5 {
+    background: url(../img/5.png) no-repeat 30px center;
+}
+
+.cards .card-6 {
+    background: url(../img/6.png) no-repeat 30px center;
+}
+
+.cards .card-7 {
+    background: url(../img/7.png) no-repeat 30px center;
+}
+
+.cards .card-8 {
+    background: url(../img/8.png) no-repeat 30px center;
+}
+
+.cards .card-9 {
+    background: url(../img/9.png) no-repeat 30px center;
+}
+
+.cards .card-10 {
+    background: url(../img/about-card-processing.png) no-repeat left center;
+}
+
+.cards .card-11 {
+    background: url(../img/about-international-acceptance.png) no-repeat left center;
+}
+
+.cards .card-12 {
+    background: url(../img/about-alternative-payments.png) no-repeat left center;
+}
+
+.cards .card-13 {
+    background: url(../img/about-merchantpay-ach.png) no-repeat left center;
+}
+
+.cards-pictured-wide {}
+
+.cards-pictured-wide .card {
+    max-width: none;
+    min-height: 482px;
+}
+
+.cards-pictured-wide .card-body {
+    padding-top: 95px;
+    padding-left: 450px;
+}
+
+.cards-pictured-wide h3 {
+    color: #3e4152 !important;
+    font-size: 30px !important;
+    font-family: 'avalonbold' !important;
+}
+
+.cards-pictured-wide h4 {
+    color: #929292;
+    font-size: 17px;
+    font-family: 'avalonbold';
+}
+
+.cards-pictured-wide p {
+    color: #929292;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.cards-pictured .card {
+    height: 279px;
+}
+
+.cards-pictured .card-body {
+    padding-top: 47px;
+    padding-left: 209px;
+}
+
+.cards-pictured h3 {
+    color: #3e4152;
+    font-size: 18px;
+    font-family: 'avalonbold';
+}
+
+.cards-pictured p {
+    color: #929292;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.cards-img-1 {
+    background: url(../img/cards-img-1.png) no-repeat left center;
+    background-size: contain;
+}
+
+.cards-img-2 {
+    background: url(../img/cards-img-2.png) no-repeat left center;
+    background-size: contain;
+}
+
+.cards-img-3 {
+    background: url(../img/cards-img-3.png) no-repeat left center;
+    background-size: contain;
+}
+
+.cards-img-4 {
+    background: url(../img/cards-img-4.png) no-repeat left center;
+    background-size: contain;
+}
+
+.cards-img-5 {
+    background: url(../img/cards-img-5.png) no-repeat left center;
+    background-size: contain;
+}
+
+.cards-img-6 {
+    background: url(../img/cards-img-6.png) no-repeat left center;
+    background-size: contain;
+}
+
+.cards-img-7 {
+    background: url(../img/cards-img-7.png) no-repeat left center;
+    background-size: contain;
+}
+
+.cards-img-8 {
+    background: url(../img/cards-img-8.png) no-repeat left center;
+    background-size: contain;
+}
+
+.cards-pictured-wide-6 .card {
+    min-height: 374px;
+}
+
+.cards-pictured-wide-6 .card-body {
+    padding-top: 80px;
+}
+
+.cards-pictured-wide-8 .card {
+    min-height: 316px;
+}
+
+.cards-pictured-wide-8 .card-body {
+    padding-top: 80px;
+    padding-left: 285px;
+}
+
+.card-omnichannel .card {
+    background-color: transparent;
+    border-radius: 0;
+    min-height: auto;
+    line-height: 1.8
+}
+
+.card-omnichannel .card-body {
+    padding: 0 0 0 100px;
+}
+
+.card-omnichannel p {
+    margin-bottom: 0;
+}
+
+.cards h3 {
+    font-size: 20px;
+    font-family: 'avalonbold';
+    color: #303a81;
+    margin-bottom: 0;
+}
+
+.about {
+    margin-top: 181px;
+}
+
+.about h1 {
+    font-size: 30px;
+    color: #3e4152;
+    font-family: 'avalonbold';
+}
+
+.about h1 span {
+    color: #263074;
+}
+
+.about h2 {
+    font-size: 17px;
+    color: #929292;
+    font-family: 'avalonbold';
+}
+
+.about h3 {
+    font-size: 14px;
+    color: #3e4152;
+    font-weight: bold;
+}
+
+.about p {
+    color: #929292;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.about .about-check {}
+
+.about .about-check i {
+    font-size: 36px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6975ca+0,2d377a+100 */
+    background: rgb(105,117,202); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(105,117,202,1) 0%, rgba(45,55,122,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(105,117,202,1) 0%,rgba(45,55,122,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(105,117,202,1) 0%,rgba(45,55,122,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6975ca', endColorstr='#2d377a',GradientType=0 ); /* IE6-9 */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.quick-menu {
+    margin-top: 163px;
+}
+
+.quick-menu-margin {
+    margin-bottom: 163px;
+}
+
+.quick-menu .card {
+    border-radius: 30px;
+    background-color: #fff;
+    border: none;
+}
+
+.quick-menu .card h5 {
+    color: #303a81;
+    font-size: 17px;
+    font-family: 'avalonbold';
+}
+
+.quick-menu .card p {
+    color: #929292;
+    font-size: 14px;
+}
+
+.quick-menu .card .card-body {
+    padding: 30px 43px;
+}
+
+.phones {
+    margin-top: 120px;
+}
+
+.phones .card h5 {
+    color: #4853a3;
+    font-size: 28px;
+    font-family: 'avalonbold';
+}
+
+.phones .card h6 {
+    color: #3e4152;
+    font-size: 18px;
+    font-family: 'avalonbold';
+}
+
+.phones .card p {
+    line-height: 1.8;
+}
+
+.get-in-touch {
+    margin-top: 100px;
+    margin-bottom: 179px;
+}
+
+.get-in-touch h1 {
+    font-size: 30px;
+    font-family: 'avalonbold';
+    color: #303a80;
+}
+
+.get-in-touch h2 {
+    font-size: 17px;
+    color: #929292;
+    font-family: 'avalonbold';
+    line-height: 1.5;
+}
+
+hr {
+    border-top: 1px solid #6f75a7;
+}
+
+.they-said {
+    padding-top: 70px;
+    margin-bottom: 70px;
+    display: none;
+}
+
+footer {
+    color: #fff;
+    margin-top: 70px;
+}
+
+footer .footer-top {
+    margin-bottom: 70px;
+}
+
+footer .col-md-4 {
+    margin-right: 75px;
+}
+
+footer h3 {
+    font-family: 'avalonbold';
+    font-size: 20px;
+}
+
+footer p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+footer a {
+    font-size: 14px;
+    color: #fff;
+}
+
+footer .footer-bottom a.social {
+    background-color: #fff;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+footer .footer-bottom a.social i {
+    color: #303a81;
+    font-size: 12px;
+}
+
+footer .go-on-top {
+    font-size: 17px;
+}
+
+/* OTHER PAGES */
+
+.sub-menu h3 {
+    font-size: 20px;
+    padding-left: 53px;
+    color: #fff;
+}
+
+.sub-menu h3.credit-card {
+    background: url(../img/credit-card.png) no-repeat left center;
+}
+
+.sub-menu h3.in-store {
+    background: url(../img/in-store.png) no-repeat left center;
+}
+
+.sub-menu h3.online-payments {
+    background: url(../img/online-payments.png) no-repeat left center;
+}
+
+.highlights {
+    color: #929292;
+    margin-top: 90px;
+}
+
+.highlights p {
+    line-height: 2;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.widget {
+    margin-top: 100px;
+}
+
+.widget .col {
+    border-radius: 30px;
+    background-color: #fff;
+    padding: 70px 100px;
+}
+
+.widget h1 {
+    font-size: 30px;
+    font-family: 'avalonbold';
+    color: #303a80;
+}
+
+.widget p {
+    color: #929292;
+    font-size: 14px;
+}
+
+.form {
+    background-color: #fff;
+    border-radius: 30px;
+    margin-top: 125px;
+}
+
+.form .card {
+    border-radius: 30px;
+    background-color: #fff;
+    border: none;
+}
+
+.form input[type="text"], .form input[type="email"] {
+    border: none;
+    background-color: #efefef;
+    height: 40px;
+    border-radius: 0;
+}
+
+.form textarea {
+    border: none;
+    background-color: #efefef;
+    height: 150px;
+    border-radius: 0;
+}
+
+.form select {
+    border: none;
+    background-color: #3e4152;
+    color: #fff;
+    height: 40px;
+    border-radius: 0;
+}
+
+.form-head {
+    color: #fff;
+    background-color: #67bbd5;
+    border-radius: 30px 30px 0 0;
+    font-size: 20px;
+    padding-left: 35px;
+    line-height: 1.1;
+}
+
+.form-head small {
+    font-size: 14px;
+}
+
+.form .btn-secondary {
+    color: #6c757d !important;
+    background-color: transparent !important;
+    border: none;
+    outline: none;
+}
+
+.form .btn-secondary.focus {
+    box-shadow: none;
+}
+
+.form .btn-secondary:not(:disabled):not(.disabled).active {
+    color: #6c757d;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.form .radio-switcher {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #efefef;
+    border-radius: 15px;
+}
+
+.form .active .radio-switcher {
+    background-color: #3e4152;
+}

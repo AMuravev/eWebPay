@@ -3,3 +3,50 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
+
+.get-in-touch h1, .get-in-touch h2 {
+    margin: 0 auto !important;
+}
+
+hr {
+    width: 100%;
+}
+
+.navbar-expand-sm .navbar-nav a {
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+
+.navbar-expand-sm .navbar-nav a:hover {
+    color: rgba(0,0,0,.7);
+    text-decoration: none;
+}
+
+.navbar-light .navbar-nav .current-menu-item>a {
+    color: #fff;
+    font-weight: 600;
+}
+
+.margin-center {
+    margin: 0 auto !important;
+}
+
+.sub-footer {
+    padding-top: 70px;
+}
+
+.card-image h3 {
+    font-size: 20px;
+    font-family: avalonbold;
+    color: #303a81;
+    margin-bottom: 0;
+}
+
+.properties p {
+    margin-bottom: 0 !important;
+}
+
+.w-100 {
+    content: " ";
+    width: 100% !important;
+}

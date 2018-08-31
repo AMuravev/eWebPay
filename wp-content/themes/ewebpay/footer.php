@@ -11,40 +11,46 @@
 
 ?>
 
-<footer class="footer">
+
   <div class="container">
     <div class="row footer-top">
       <div class="col-md-4">
         <div class="d-flex"><div class="logo-top">eWebPay</div></div>
-        <p class="mt-4">We’re changing the face of payments – one happy customer at a time. Our vision is to be the leader in simplifying payments innovation – to enable commerce and help our customers and partners grow and thrive. </p>
+        <p class="mt-4">
+          <?php
+          $description = carbon_get_theme_option( 'crb_footer_description' );
+          echo $description
+          ?>
+        </p>
       </div>
       <div class="col-md">
         <div class="row">
           <div class="col-4">
             <h3>Services</h3>
-            <p class="mt-4"><a href="#">Enterprise</a></p>
-            <p><a href="#">Dataedge</a></p>
-            <p><a href="#">Mobi Money</a></p>
-            <p><a href="#">Merchant Services</a></p>
-            <p><a href="#">Secured Card Data</a></p>
+            <?php wp_nav_menu( ([
+                'theme-location' => 'menuFooter',
+                'menu' => 'Footer Menu Service',
+                'container' => false,
+                'menu_class' => 'navbar-nav mr-auto',
+            ]))?>
           </div>
           <div class="col-4">
             <h3>Contact us</h3>
             <p class="mt-4">
-              The e-webpay Company Ltd. 54B,<br>
-              Tailstoi Town 5238<br>
-              MT, lowa city<br>
-              +6681 631 237 884<br>
-              info@ewebpay.com
+              <?php
+              $contact_us = carbon_get_theme_option( 'crb_footer_contact_us' );
+              echo wpautop($contact_us);
+              ?>
             </p>
           </div>
           <div class="col-4">
             <h3>Useful</h3>
-            <p class="mt-4"><a href="#">Merchants</a></p>
-            <p><a href="#">Financial Institutions</a></p>
-            <p><a href="#">They said about us</a></p>
-            <p><a href="#">Contact Us</a></p>
-            <p><a href="#">FAQ</a></p>
+            <?php wp_nav_menu( ([
+                'theme-location' => 'menuFooter',
+                'menu' => 'Footer Menu Useful',
+                'container' => false,
+                'menu_class' => 'navbar-nav mr-auto',
+            ]))?>
           </div>
         </div>
       </div>
@@ -54,11 +60,18 @@
       <div class="col-md-6">Copyright 2018 © ewebpay.com | All Rights Reserved.</div>
       <div class="col-md-6 text-right">
         <a href="#" class="go-on-top mr-3">Go on top</a>
-        <a href="#" class="social text-center mr-2"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="social text-center mr-2"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="social text-center mr-2"><i class="fab fa-google-plus-g"></i></a>
-        <a href="#" class="social text-center mr-2"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" class="social text-center mr-2"><i class="fa fa-rss"></i></a>
+
+        <?php
+        $socials = carbon_get_theme_option( 'crb_footer_soc_block' );
+
+        foreach ($socials as $social) {
+
+        ?>
+          <a href="<?php echo $social['link']?>" class="social text-center mr-2"><i class="<?php echo $social['icon']?>"></i></a>
+        <?php
+        }
+        ?>
+
       </div>
     </div>
   </div>
