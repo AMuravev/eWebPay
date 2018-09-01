@@ -50,3 +50,68 @@ hr {
     content: " ";
     width: 100% !important;
 }
+
+.phones .card-phone h5 {
+    color: #4853a3 !important;
+    font-size: 28px !important;
+    font-family: avalonbold;
+}
+
+.phones h6 {
+    color: #3e4152;
+    font-size: 18px;
+    font-family: avalonbold;
+}
+
+.phones p {
+    line-height: 1.8;
+    color: #929292;
+    font-size: 14px;
+}
+
+.position-bottom {
+    position: absolute !important;
+    bottom: 0;
+    left: 0;
+}
+
+.form-w100 * {
+    width: 100%;
+}
+
+.form-w100 .row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.form-w100 input[type="submit"], .form-w100 input[type="radio"], .radio-control span {
+    width: auto;
+}
+
+form .btn-group-toggle input {
+    position: absolute;
+    clip: rect(0,0,0,0);
+    pointer-events: none;
+}
+
+form .btn-group-toggle label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+form .btn-group-toggle label:after {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: #efefef;
+    border-radius: 15px;
+}
+
+form .btn-group-toggle label.active:after {
+    background-color: #3e4152;
+}
+

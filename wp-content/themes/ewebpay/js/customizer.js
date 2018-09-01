@@ -8,4 +8,13 @@
 
 ( function( $ ) {
 
+    /*toggle label active*/
+
+    $('.radio-control label').eq(0).addClass('active');
+
+    $('.radio-control label').on('click', function() {
+        $('.radio-control label').removeClass('active');
+        $(this).addClass('active');
+    });
+
 } )( jQuery );
