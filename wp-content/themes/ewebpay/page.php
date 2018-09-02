@@ -15,7 +15,13 @@
 get_header();
 ?>
 
-<body <?php body_class('bg'); ?>>
+<?php
+/** @var WP_Post $post */
+global $post;
+$class_body = carbon_get_post_meta($post->ID,'body_class');
+?>
+
+<body <?php body_class($class_body); ?>>
 
 <div class="container">
   <div class="row mt-5">
@@ -54,7 +60,13 @@ get_header();
 
 </div>
 
-<footer class="footer">
+<?php
+/** @var WP_Post $post */
+global $post;
+$class_footer = carbon_get_post_meta($post->ID,'footer_class');
+?>
+
+<footer class="<?php echo $class_footer ?>">
 
 <?php
 get_footer();

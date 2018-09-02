@@ -28,4 +28,11 @@ function crb_attach_theme_options() {
                     Field::make( 'text', 'icon', 'Add font awesome class' ),
                 ) ),
         ) );
+    Container::make( 'post_meta', 'Add classes for page' )
+        ->where( 'post_type', '=', 'page' )
+        ->add_fields(array(
+            Field::make( 'text', 'html_class', 'Add some class for page' ),
+            Field::make( 'text', 'body_class', 'Add some class for body' ),
+            Field::make( 'text', 'footer_class', 'Add some class for footer' ),
+        ));
 }

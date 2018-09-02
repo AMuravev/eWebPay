@@ -9,9 +9,13 @@
  * @package eWebPay
  */
 
+/** @var WP_Post $post */
+global $post;
+$class_html = carbon_get_post_meta($post->ID,'html_class');
+
 ?>
 <!doctype html>
-<html class="color_scheme main">
+<html class="color_scheme <?php echo $class_html ?>">
 
 <head>
   <!-- META TAGS -->

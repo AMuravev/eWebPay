@@ -36,7 +36,7 @@
           </div>
           <div class="col-4">
             <h3>Contact us</h3>
-            <p class="mt-4">
+            <p class="mt-4 mb-4">
               <?php
               $contact_us = carbon_get_theme_option( 'crb_footer_contact_us' );
               echo wpautop($contact_us);
@@ -58,7 +58,7 @@
     <hr>
     <div class="row mt-3 pb-3 footer-bottom">
       <div class="col-md-6">Copyright 2018 © ewebpay.com | All Rights Reserved.</div>
-      <div class="col-md-6 text-right">
+      <div class="col-md-6 text-md-right">
         <a href="#" class="go-on-top mr-3">Go on top</a>
 
         <?php

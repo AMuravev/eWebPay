@@ -115,3 +115,27 @@ form .btn-group-toggle label.active:after {
     background-color: #3e4152;
 }
 
+@media (max-width: 767px) {
+ .text-intro h1 {
+     font-size: 30px;
+ }
+ .text-intro h2 {
+        font-size: 17px;
+ }
+ .get-in-touch {
+     margin-top: 100px;
+     margin-bottom: 100px;
+ }
+ .hidden-phone {
+     display: none !important;
+ }
+
+ .form-control {
+     margin-bottom: 10px !important;
+ }
+
+ .btn-group-toggle span {
+     display: block;
+ }
+
+}
