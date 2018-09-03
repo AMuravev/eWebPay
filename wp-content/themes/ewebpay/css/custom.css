@@ -137,5 +137,26 @@ form .btn-group-toggle label.active:after {
  .btn-group-toggle span {
      display: block;
  }
+ 
+ footer {
+     background-image: none !important;
+     background-color: #2f3781 !important;
+ }
+
+ footer .logo-top {
+     margin-top: 30px;
+ }
+
+ .navbar-nav {
+     flex-direction: column !important;
+ }
+
+ #menu-header-menu li {
+     margin-bottom: 10px !important;
+ }
+
+ .navbar-expand-sm .navbar-nav a {
+     font-size: 20px;
+ }
 
 }

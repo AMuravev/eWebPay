@@ -16,7 +16,7 @@
     <div class="row footer-top">
       <div class="col-md-4">
         <div class="d-flex"><div class="logo-top">eWebPay</div></div>
-        <p class="mt-4">
+        <p class="mt-4 mb-4">
           <?php
           $description = carbon_get_theme_option( 'crb_footer_description' );
           echo $description
@@ -25,7 +25,7 @@
       </div>
       <div class="col-md">
         <div class="row">
-          <div class="col-4">
+          <div class="col-sm-4 col-6">
             <h3>Services</h3>
             <?php wp_nav_menu( ([
                 'theme-location' => 'menuFooter',
@@ -34,7 +34,7 @@
                 'menu_class' => 'navbar-nav mr-auto',
             ]))?>
           </div>
-          <div class="col-4">
+          <div class="col-sm-4 mt-sm-0 mt-4 col-12 order-last order-sm-0">
             <h3>Contact us</h3>
             <p class="mt-4 mb-4">
               <?php
@@ -43,7 +43,7 @@
               ?>
             </p>
           </div>
-          <div class="col-4">
+          <div class="col-sm-4 col-6">
             <h3>Useful</h3>
             <?php wp_nav_menu( ([
                 'theme-location' => 'menuFooter',
@@ -59,7 +59,7 @@
     <div class="row mt-3 pb-3 footer-bottom">
       <div class="col-md-6">Copyright 2018 © ewebpay.com | All Rights Reserved.</div>
       <div class="col-md-6 text-md-right">
-        <a href="#" class="go-on-top mr-3">Go on top</a>
+        <a href="" class="go-on-top mr-3">Go on top</a>
 
         <?php
         $socials = carbon_get_theme_option( 'crb_footer_soc_block' );

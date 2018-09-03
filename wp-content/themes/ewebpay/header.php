@@ -10,8 +10,10 @@
  */
 
 /** @var WP_Post $post */
-global $post;
-$class_html = carbon_get_post_meta($post->ID,'html_class');
+$class_html = '';
+if (isset($post)) {
+    $class_html = carbon_get_post_meta($post->ID, 'html_class');
+}
 
 ?>
 <!doctype html>
@@ -26,11 +28,14 @@ $class_html = carbon_get_post_meta($post->ID,'html_class');
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"/>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,900" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
 
   <!-- PAGE TITLE -->
-  <?php wp_head(); ?>
+    <?php wp_head(); ?>
 
 </head>

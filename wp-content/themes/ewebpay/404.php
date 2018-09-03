@@ -1,8 +1,13 @@
 <?php
 /**
- * The template for displaying 404 pages (not found)
+ * The template for displaying all pages
  *
- * @link https://codex.wordpress.org/Creating_an_Error_404_Page
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site may use a
+ * different template.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package eWebPay
  */
@@ -10,51 +15,46 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+<?php
+/** @var WP_Post $post */
+$class_body = '';
+$class_footer = '';
+if (isset($post)) {
+    $class_body = carbon_get_post_meta($post->ID, 'body_class');
+}
+?>
 
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'ewebpay' ); ?></h1>
-				</header><!-- .page-header -->
+<body <?php body_class($class_body); ?>>
 
-				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'ewebpay' ); ?></p>
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-lg-2 mb-md-3 col-md-12 d-flex justify-content-center logo-top-container"><div class="logo-top mr-lg-auto"><a href="<?php echo home_url('/')?>">eWebPay</a></div></div>
+    <div class="col-lg-10 col-md-12">
+      <nav class="navbar navbar-light bg-faded rounded navbar-expand-sm">
+        <div class="navbar-collapse">
+            <?php wp_nav_menu( ([
+                'theme-location' => 'menuHeader',
+                'menu' => 'Header Menu',
+                'container' => false,
+                'menu_class' => 'navbar-nav ml-lg-auto',
+            ]))?>
+        </div>
+      </nav>
+    </div>
+  </div>
 
-					<?php
-					get_search_form();
+  <p class="text-light display-2"><?php esc_html_e( 'It looks like nothing was found at this location.', 'ewebpay' ); ?></p>
 
-					the_widget( 'WP_Widget_Recent_Posts' );
-					?>
+</div>
 
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'ewebpay' ); ?></h2>
-						<ul>
-							<?php
-							wp_list_categories( array(
-								'orderby'    => 'count',
-								'order'      => 'DESC',
-								'show_count' => 1,
-								'title_li'   => '',
-								'number'     => 10,
-							) );
-							?>
-						</ul>
-					</div><!-- .widget -->
+<?php
+if (isset($post)) {
+    $class_footer = carbon_get_post_meta($post->ID, 'footer_class');
+}
+?>
 
-					<?php
-					/* translators: %1$s: smiley */
-					$ewebpay_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'ewebpay' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$ewebpay_archive_content" );
-
-					the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
-
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+<footer class="<?php echo $class_footer ?>">
 
 <?php
 get_footer();
+

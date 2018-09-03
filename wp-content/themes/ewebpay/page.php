@@ -17,23 +17,26 @@ get_header();
 
 <?php
 /** @var WP_Post $post */
-global $post;
-$class_body = carbon_get_post_meta($post->ID,'body_class');
+$class_body = '';
+$class_footer = '';
+if (isset($post)) {
+    $class_body = carbon_get_post_meta($post->ID, 'body_class');
+}
 ?>
 
 <body <?php body_class($class_body); ?>>
 
 <div class="container">
   <div class="row mt-5">
-    <div class="col d-flex logo-top-container"><div class="logo-top"><a href="/">eWebPay</a></div></div>
-    <div class="col text-right">
+    <div class="col-lg-2 mb-md-3 col-md-12 d-flex justify-content-center logo-top-container"><div class="logo-top mr-lg-auto"><a href="<?php echo home_url('/')?>">eWebPay</a></div></div>
+    <div class="col-lg-10 col-md-12">
       <nav class="navbar navbar-light bg-faded rounded navbar-expand-sm">
         <div class="navbar-collapse">
             <?php wp_nav_menu( ([
                 'theme-location' => 'menuHeader',
                 'menu' => 'Header Menu',
                 'container' => false,
-                'menu_class' => 'navbar-nav mr-auto',
+                'menu_class' => 'navbar-nav ml-lg-auto',
             ]))?>
         </div>
       </nav>
@@ -61,9 +64,9 @@ $class_body = carbon_get_post_meta($post->ID,'body_class');
 </div>
 
 <?php
-/** @var WP_Post $post */
-global $post;
-$class_footer = carbon_get_post_meta($post->ID,'footer_class');
+if (isset($post)) {
+    $class_footer = carbon_get_post_meta($post->ID, 'footer_class');
+}
 ?>
 
 <footer class="<?php echo $class_footer ?>">
